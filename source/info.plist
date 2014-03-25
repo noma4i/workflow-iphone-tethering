@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.noma4i.iphone.tethering</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>887A5B23-A6E8-47FC-BCF4-09569787C41A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>28116AFD-F21A-4775-85DD-99B11A7A658A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Alex Tsirel</string>
+	<key>description</key>
+	<string>Turn on/off connection with your IPhone via Bluetooth PAN</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>IPhone Tethering</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>poke iphone</string>
+				<key>text</key>
+				<string>Toggle IPhone Tethering</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>887A5B23-A6E8-47FC-BCF4-09569787C41A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>tell application "System Preferences"	reveal pane id "com.apple.preference.network"	activate	tell application "System Events" to tell process "System Preferences"		tell window 1			select (row 1 of table 1 of scroll area 1 whose value of static text 1 contains "Bluetooth")			click button 1 of group 1			display notification "Poking IPhone!"		end tell	end tell	quitend tell</string>
+				<key>cachescript</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>28116AFD-F21A-4775-85DD-99B11A7A658A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>28116AFD-F21A-4775-85DD-99B11A7A658A</key>
+		<dict>
+			<key>ypos</key>
+			<real>420</real>
+		</dict>
+		<key>887A5B23-A6E8-47FC-BCF4-09569787C41A</key>
+		<dict>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://noma4i.com</string>
+</dict>
+</plist>
