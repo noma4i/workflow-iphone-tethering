@@ -1,7 +1,7 @@
-*Alfred2 workflow to Restart Pow*
+*Alfred2 workflow to connect your IPhone Bluetooth PAN connection*
 -
-Trigger workflow and it will gracefully restart Pow in a seconds.
 
+Description goes here...
 
 **Testimony**
 
