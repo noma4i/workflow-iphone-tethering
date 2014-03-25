@@ -2,7 +2,7 @@
 -
 Trigger workflow and it will toggle your IPhone bluetooth tethering connection.
 
-![Call Pow Restart](screenshots/call_pow.png?raw=true)
+![Call Pow Restart](screenshots/poke_alfred.png?raw=true)
 
 **Testimony**
 
