@@ -1,7 +1,8 @@
 *Alfred2 workflow to connect your IPhone Bluetooth PAN connection*
 -
+Trigger workflow and it will toggle your IPhone bluetooth tethering connection.
 
-Description goes here...
+![Call Pow Restart](screenshots/call_pow.png?raw=true)
 
 **Testimony**
 
